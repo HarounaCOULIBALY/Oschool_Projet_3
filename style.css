@@ -1,24 +1,49 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style-type: none;
   box-sizing: border-box;
+  overflow: auto;
 }
 
 boby{
-  font-family: 'calibri', 'monserrat' sans-serif;
+  font-family: 'calibri', 'monserrat', sans-serif;
 }
 
-#partie1{
-  background-image: url(images/img1.png);
+.partie{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+.p1{
+  background-image: url(images/img1.png);
   height: 130vh;
 }
+.scroll2{
+  background-color: white;
+  height: 900px;
+}
+.p2{
+  background-image: url(images/img2.png);
+  height: 1300px;
+  align-content: center;
+}
+.scroll3{
+  background-color: white;
+}
+.p3{
+  background-image: url(images/img3.png);
+  height: 320vh;
+}
+
+.p4{
+  background-image: url(images/img4.png);
+  height: 100vh;
+}
+
 
 h5.entete{
   background-color: #DCDCDC;
@@ -36,8 +61,8 @@ header a{
 
 nav.nav-blanc{
   background-color: white;
-  height: 40px;
-  width: 100%;
+  height: 50px;
+  width: auto;
   display: flex;
   justify-content: space-between;
   padding: 12px;
@@ -53,9 +78,9 @@ nav.nav-bleu {
   height: 80px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 12px;
+  padding: 5px;
   align-items: center;
+
 }
 
 nav.nav-bleu .logo{
@@ -65,16 +90,19 @@ nav.nav-bleu .logo{
 }
 
 nav.nav-bleu ul{
-  align-items: center;
-  margin-right: 20%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 nav.nav-bleu ul li.btn{
-  display: inline-block;
+  display: inline;
 }
 
 nav.nav-bleu ul li.btn a{
   color: white;
+  display: inline;
+  font-size: 1em;
 }
 
 nav.nav-bleu ul li.btn:hover a{
@@ -90,55 +118,87 @@ nav.nav-bleu ul li.btn:hover a{
 }
 
 
-#partie2{
-  background-image: url(images/img2.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 180vh;
+.test{
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
-.scroll2{
-  background-color: white;
+.titre{
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.para{
+
+.paragraphe{
+  text-align: justify;
+  justify-content: center;
+  padding: 0px 55px 10px 100px;
+  margin-right: 100px;
+
+}
+
+ .para{
+   font-size: 15px;
+   padding-top: 15px;
+ }
+.para1{
   text-align: center;
-  margin-top: 130px;
+  margin-top: 20px;
   color: #006699;
   font-size: 12px;
 }
+
+.video1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.video1 div.genre{
+  visibility: hidden;
+  margin-bottom: 15px;
+}
+
 .video{
   display: flex;
-  margin: 5px 55px 100PX 55PX;
-}
-.video iframe{
-  margin: 10px;
-  padding: 10px 5px;
+  padding: 55px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-
-#partie3{
-  background-image: url(images/img3.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 320vh;
+.vid1{
+  height: 250px;
+  width: 350px;
+  margin-right: 6px;
+  padding: 0px;
 }
-.scroll3{
-  background-color: white;
-  padding-bottom: 100px;
+.vid2{
+  height: 250px;
+  width: 350px;
+  margin-right: 3px;
+  padding: 0px;
+}
+.vid3{
+  height: 250px;
+  width: 350px;
+  margin-left: 3px;
+  padding: 0px;
 }
 
 .tel1{
-  height: 600px;
-  width: 500px;
   display: flex;
-  margin: 100px 150px 130px 50px;
+  padding: 100px 50px 100px 50px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .image3{
   display: flex;
-  padding-left: 140px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .tel{
   height: 350px;
@@ -152,27 +212,17 @@ nav.nav-bleu ul li.btn:hover a{
 }
 
 
-#partie4{
-  background-image: url(images/img4.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-}
-.scroll4{
-  background-color: white;
-}
 .para4{
   text-align: center;
   font-size: 20px;
   color: #006699;
+  background-color: white;
 }
 .para4 h3{
   padding: 15px 0px;
 }
 
-#footer{
+.footer{
   background-color: #006699;
   height: 250px;
 }
@@ -200,3 +250,233 @@ nav.nav-bleu ul li.btn:hover a{
 .footer_blue p{
   color: white;
 }
+
+@media only screen and (max-width: 600px) {
+    .partie{
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: local;
+    }
+    h5.entete{
+      background-color: #DCDCDC;
+      height: 30px;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+    }
+    nav.nav-blanc{
+      background-color: white;
+      height: 5px;
+      width: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+      align-items: center;
+    }
+    nav.nav-blanc a{
+      padding: 3px;
+      margin: 0px;
+    }
+    .usa{
+      height: 6px;
+      width: 12px;
+    }
+    nav.nav-bleu {
+      background-color: #006699;
+      height: 25px;
+      width: 100%;
+      display: flex;
+      padding: 3px;
+      align-items: center;
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+    }
+    nav.nav-bleu .logo{
+      margin-left: 10px;
+      width: 50px;
+      height: 10px;
+    }
+    nav.nav-blanc a{
+      position: relative;
+      font-size: 5px;
+    }
+    nav.nav-bleu ul li.btn a{
+      font-size: 5px;
+    }
+    .logo2{
+      padding: 10px 5px;
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      height: 60px;
+      width: auto;
+    }
+    .p1{
+      background-image: url(images/img1.png);
+      height: 60vh;
+    }
+    .scroll2{
+      background-color: white;
+      height: 100vh;
+      align-items: center;
+      align-content: center;
+      margin: 0px;
+      padding: 15px;
+    }
+
+    .test{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+    }
+    .titre{
+      padding: 0px;
+      margin: 0px;
+      font-size: 9px;
+      color: blue;
+    }
+    .paragraphe{
+      align-content: center;
+      align-items: center;
+      text-align: justify;
+      padding: 5px;
+      margin: 0px;
+      font-size: 14px;
+    }
+    .para{
+      align-content: center;
+      align-items: center;
+      text-align: justify;
+      font-size: 12px;
+      padding-top: 15px;
+      padding: 5px;
+      margin: 0px;
+    }
+    .video1{
+      display: flex;
+      flex-direction: column;
+    }
+    .youtube{
+      height: 250px;
+      width: auto;
+    }
+    .video1 div.genre{
+      visibility: visible;
+      margin-bottom: 5px;
+    }
+    div.genre a{
+      width: 100px;
+      margin: 5px;
+      padding: 10px;
+      background-color: blue;
+      font-size: 10px;
+      color: white;
+      text-align: center;
+    }
+    .p2{
+      background-image: url(images/img2.png);
+      height: 1000px;
+
+    }
+    .p3{
+      background-image: url(images/img3.png);
+      height: 120vh;
+    }
+    .scroll3{
+      background-color: white;
+      height: 100vh;
+    }
+
+    .para1{
+      display: none;
+    }
+    .video{
+      display: flex;
+      padding: 0px;
+      margin: 10px;
+    }
+    .video iframe.vid1{
+      height: 150px;
+      width: 100px;
+      margin-right: 3px;
+      padding: 0px;
+    }
+    .video iframe.vid2{
+      height: 150px;
+      width: 100px;
+      margin-right: 3px;
+      padding: 0px;
+    }
+    .video iframe.vid3{
+      height: 150px;
+      width: 100px;
+      margin-left: 3px;
+      padding: 0px;
+    }
+    .tel1{
+      display: none;
+    }
+    .p4{
+      background-image: url(images/img4.png);
+      height: 70vh;
+      align-content: center;
+    }
+    .para4{
+      font-size: 15px;
+    }
+
+    .scroll3{
+      background-color: white;
+      height: 80vh;
+    }
+
+    .image3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    .tel{
+      height: 150px;
+      width: 100px;
+      margin: 3px;
+    }
+    .para2{
+      text-align: center;
+      margin-top: 5px;
+      font-size: 10px;
+    }
+
+
+    .footer{
+      background-color: #006699;
+      height: 100px;
+    }
+    .footer_white{
+      width: 100%;
+      height: 7px;
+      background-color: white;
+    }
+    .footer_blue{
+      padding: 0px;
+    }
+    .logo img{
+      width: 50px;
+      height: 10px;
+      margin-top: 10px;
+    }
+    .trait_blanc{
+      width: 100%;
+      height: 2px;
+      margin-bottom: 8px;
+      background-color: white;
+    }
+    .footer_blue p{
+      color: white;
+      font-size: 8px;
+    }
+
+  }
